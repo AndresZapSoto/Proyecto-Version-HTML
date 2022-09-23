@@ -19,12 +19,38 @@
         color: white;
         font-family: Tahoma;
     }
-
     h3 {
         background-color: dodgerblue;
         color: white;
         font-family: Tahoma;
     }
+	.ul {
+		list-style-type: none;
+		font-family: verdana;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(30, 38, 45);
+		position: sticky;
+		top: 0;
+		width: 100%;
+	}
+	.ul li {
+		float: left;
+	}
+	.ul li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+ 	li a:hover {
+		background-color: rgb(23, 55, 55);
+	}
+
+
+
 </style>
 </head>
 <body style="background-color: skyblue;">
@@ -43,15 +69,15 @@ en los diferentes conocimientos. Además de servir como repositorio, un backup d
 versiones que se podrán visualizar y ver los cambios afectados.</p>
 
 <!--lINKS MENU HEADINGS-->
-<p style="text-align: center;">
-<a href="#C1">Headings</a>
-<a href="#C2">Formateo Texto</a>
-<a href="#C3">Estilizado Texto</a>
-<a href="#C4">HTML links</a>
-<a href="#C5">HTML Imagenes</a><br>
-<a href="#C6">HTML Listas</a>
-<a href="#C7">Acerca de</a>
-</p>
+<ul class="ul">
+	<li><a href="#C1">Headings</a></li>
+	<li><a href="#C2">Formateo Texto</a></li>
+	<li><a href="#C3">Estilizado Texto</a></li>
+	<li><a href="#C4">HTML links</a></li>
+	<li><a href="#C5">HTML Imagenes</a></li>
+	<li><a href="#C6">HTML Listas</a></li>
+	<li><a href="#C7">Acerca de</a></li>
+</ul>
 
 <hr>
 
@@ -87,16 +113,16 @@ indicar <b>negrilla</b>, <q><i>em</i></q> para emfatizar un texto, o <q><i>del</
 texto, entre muchas otras listadas a continuación.</p>
 
 <ol>
-	<li> <q>b</q> <b>Texto en negrilla</b><br></li>
-	<li> <q>strong</q> <strong>Texto importante</strong><br></li>
-	<li> <q>i</q> <i>Texto en cursiva</i><br></li>
-	<li> <q>em</q> <em>Texto enfatizado</em><br></li>
-	<li> <q>mark</q> <mark>Texto marcado</mark><br></li>
-	<li> <q>small</q> <small>Texto opeque</small><br></li>
-	<li> <q>del</q> <del>Texto eliminado</del><br></li>
-	<li> <q>ins</q> <ins>Texto insertado</ins><br></li>
-	<li> <q>sub</q> <sub>Texto subscripto</sub><br></li>
-	<li> <q>sup</q> <sup>Texto supercripto</sup><br></li>
+	<li> <q>b</q> <b>Texto en negrilla</b></li>
+	<li> <q>strong</q> <strong>Texto importante</strong></li>
+	<li> <q>i</q> <i>Texto en cursiva</i></li>
+	<li> <q>em</q> <em>Texto enfatizado</em></li>
+	<li> <q>mark</q> <mark>Texto marcado</mark></li>
+	<li> <q>small</q> <small>Texto opeque</small></li>
+	<li> <q>del</q> <del>Texto eliminado</del></li>
+	<li> <q>ins</q> <ins>Texto insertado</ins></li>
+	<li> <q>sub</q> <sub>Texto subscripto</sub></li>
+	<li> <q>sup</q> <sup>Texto supercripto</sup></li>
 </ol>
 
 <!--Imagen link al inicio de pagina-->
@@ -179,12 +205,12 @@ title="From W3School">
 
 <br>
 <ul>
-    <li>El tag <b>&lt;img&gt;</b>, es usado para incrustar una imagen.<br></li>
-    <li>El atributo <b>src</b> especifica el link de la imagen.<br></li>
-    <li>El atributo <b>alt</b> especifica un texto alterno a la imagen.<br></li>
+    <li>El tag <b>&lt;img&gt;</b>, es usado para incrustar una imagen.</li>
+    <li>El atributo <b>src</b> especifica el link de la imagen.</li>
+    <li>El atributo <b>alt</b> especifica un texto alterno a la imagen.</li>
     <li>Los atributos <b>width</b> y <b>height</b> permiten modificar el alto y ancho de una imagen.</li>
 </ul>
-    <br>
+<br>
 Sintaxis de <b>width</b> y <b>height</b> aplicando CSS style:<br>
 <img src="Resources/sintaxisImgCSSstyle.jpg" width="600" height="40" alt="Sintaxis CSS style" 
 title="From W3School">
@@ -204,10 +230,10 @@ title="From W3School" ><br>
 <h4>Shapes</h4>
 <p>El atributo <mark><b>&lt;area shape=" "</b></mark> recibe 4 valores:<br>
 <ul>
-    <li><mark><b>rect:</b></mark> define una área rectangular<br></li>
-    <li><mark><b>circle:</b></mark> define una región circular<br></li>
-    <li><mark><b>poly:</b></mark> define una región poligonal<br></li>
-    <li><mark><b>default:</b></mark> define una región entera<br></li>
+    <li><mark><b>rect:</b></mark> define una área rectangular</li>
+    <li><mark><b>circle:</b></mark> define una región circular</li>
+    <li><mark><b>poly:</b></mark> define una región poligonal</li>
+    <li><mark><b>default:</b></mark> define una región entera</li>
 </ul>
 
 <h4>Coords</h4>
@@ -248,6 +274,7 @@ El tipo de marcador se puede modificar con los siguientes valores:
     <li>type="I": Lista se representa con romanos en mayúsculas</li>
     <li>type="i": Lista se representa con romanos en minúsculas</li>
 </ol>
+
 <img src="Resources/sintaxisListasOrdered.jpg" width="170" height="130" alt="Ejemplo lista ordenada"
 title="From W3School">
 <h4>LISTAS DESORDENADAS</h4>
