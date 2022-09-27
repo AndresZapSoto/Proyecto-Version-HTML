@@ -15,6 +15,12 @@
 		padding-right: 5%;
 		font-family: Verdana;
 	}
+
+    .barnav {
+        margin: 5px;
+        padding: 5px;
+    }
+
     h2 {
 		padding: 15px;
 		border-radius: 5px;
@@ -29,6 +35,18 @@
         color: white;
         font-family: Tahoma;
     }
+    .intro {
+        width: fit-content;
+        border: 10px;
+        margin: 20px;
+        padding: 10px 40px;
+        text-align-last: justify;
+    }
+
+   .navbar {
+        /*margin: 0px -20px 0px 0px;*/
+        float: right;    
+    }
 	.ul {
 		list-style-type: none;
 		font-family: verdana;
@@ -38,7 +56,7 @@
 		background-color: rgb(30, 38, 45);
 		position: sticky;
 		top: 0;
-		width: 100%;
+		width: fit-content;
 	}
 	.ul li {
 		float: left;
@@ -53,36 +71,51 @@
  	li a:hover {
 		background-color: rgb(23, 55, 55);
 	}
-
+    #TopWeb{
+        text-decoration-line: overline underline;
+        text-shadow: 4px 4px 10px grey;
+    }
 
 
 </style>
 </head>
 <body style="background-color: skyblue;">
 
-<h1 id="TopWeb">DIARIO DESARROLLO HTML5 </h1>
+<h1 id="TopWeb">DIARIO DESARROLLO HTML5 - CSS</h1>
+<br>
 
-<img src="resources/HTML5_logo.png" width="200" height="200" alt="Logo HTML5"
-title="HTML5 logo">
+<div class="headerlogo">
+    <img src="resources/HTML5_logo.png" width="200" height="200" alt="Logo HTML5"
+        title="HTML5 logo">
+    <img src="resources/CSS_logo.png" width="150" height="200" alt="Logo CSS"
+        title="CSS logo">
+</div>
 
+<br>
+
+<!--lINKS MENU HEADINGS-->
+<div class="navbar">
+    <ul class="ul">
+        <li><a href="#C1">Headings</a></li>
+        <li><a href="#C2">Formateo Texto</a></li>
+        <li><a href="#C3">Estilizado Texto</a></li>
+        <li><a href="#C4">HTML links</a></li>
+        <li><a href="#C5">HTML Imagenes</a></li>
+        <li><a href="#C6">HTML Listas</a></li>
+        <li><a href="#C7">Acerca de</a></li>
+    </ul>
+</div>
+<br><br><br>
 <!--HEADING INTRODUCCION-->
 <h2>INTRODUCCIÓN</h2>
 
-<p>La siguiente página web muestra el desarrollo de aprendizaje frontend desde HTML5 en adelante,<br>
-partiendo desde la bases y siguiendo un diario de version, se ira actualizando conforme se avanza<br>
-en los diferentes conocimientos. Además de servir como repositorio, un backup de las diferentes<br>
-versiones que se podrán visualizar y ver los cambios afectados.</p>
+<div class="intro">
+    <p>La siguiente página web muestra el desarrollo de aprendizaje frontend desde HTML5 en adelante,<br>
+    partiendo desde la bases y siguiendo un diario de version, se ira actualizando conforme se avanza<br>
+    en los diferentes conocimientos. Además de servir como repositorio, un backup de las diferentes<br>
+    versiones que se podrán visualizar y ver los cambios afectados.</p>
+</div>
 
-<!--lINKS MENU HEADINGS-->
-<ul class="ul">
-	<li><a href="#C1">Headings</a></li>
-	<li><a href="#C2">Formateo Texto</a></li>
-	<li><a href="#C3">Estilizado Texto</a></li>
-	<li><a href="#C4">HTML links</a></li>
-	<li><a href="#C5">HTML Imagenes</a></li>
-	<li><a href="#C6">HTML Listas</a></li>
-	<li><a href="#C7">Acerca de</a></li>
-</ul>
 
 <hr>
 
@@ -95,8 +128,8 @@ es el de menor importancia y menor tamaño.</p>
 
 <blockquote>
 	<h1>Heading h1</h1>
-	<h2 style="background-color: transparent; color: black">Heading h2</h2>
-	<h3 style="background-color: transparent; color: black;">Heading h3</h3>
+	<h2 style="background-color: transparent; padding: 0px; color: black">Heading h2</h2>
+	<h3 style="background-color: transparent; padding: 0px; color: black;">Heading h3</h3>
 	<h4>Heading h4</h4>
 	<h5>Heading h5</h5>
 	<h6>Heading h6</h6>
@@ -344,7 +377,7 @@ Inician con el tag <mark><b>&lt;dl&gt;</b></mark>, el tag <mark><b>&lt;dt&gt;</b
 
 <hr>
 
-<p><i>Versión: 2.0 - Fecha: 09/16/2022<br>
+<p><i>Versión: 2.1 - Fecha: 09/26/2022<br>
 <a href="D:/FrontEnd/HTML pages/Proyecto Version HTML/ChangeList.html" target="_blank">Changelog History</a></p>
 </i>
 </body>
